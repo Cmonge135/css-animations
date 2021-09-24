@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.parent {
+    background-color: purple;
+    height: 400px;
+    width: 400px;
+}
+
+.child {
+    background-color: bisque;
+    height: 50%;
+    width: 50%;
+}
+
+.parent:hover .child {
+    transform: translateX(100%);
+    animation: slide-around 3s linear infinite forwards;
+}
+
+@keyframes slide-around {
+    0% {
+        background-color: bisque;
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+    75% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+        border-radius: 50%;
+    }
+}
