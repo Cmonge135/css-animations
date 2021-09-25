@@ -40,3 +40,31 @@
         border-radius: 50%;
     }
 }
+
+
+/* arrow */
+.container {
+    margin: 40px auto;
+    max-width: 600px;
+}
+.arrow {
+    text-align: center;
+    margin: 200px 0;
+}
+p {
+    font-size: 25px;
+}
+.arrow-anim {
+    color: #00FF00;
+    font-size: 50px;
+    text-decoration: none;
+    animation: bounce 2s alternate infinite;
+}
+@keyframes bounce {
+    0%, 25%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
